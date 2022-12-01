@@ -54,11 +54,17 @@
  
  .nav-bar
  {  
-   grid-area: nav-bar; 
-   background-color: #1a1919;
-   color:white;
-   display: flex;  
-   align-items: center;
+  grid-area: nav-bar; 
+  background-color: #242526;
+  color:white;
+  display: flex;
+
+  align-items: center;
+  /*border-width: thin rgb(255, 255, 255);*/
+  padding: 1em;
+  border-bottom-width: thin;
+  border-bottom-style:groove;
+  border-color: aliceblue;
  }
  .dashboard__btn {
   font-size: 18px;
@@ -70,47 +76,46 @@
  
  .seccion-1
  {
-   grid-area: seccion-1;  
-   background-color: rgb(100, 98, 98);  
-   border: 1px solid white;
-   display: flex;
-   justify-content: space-evenly;
-   align-items: flex-start;
-   flex-direction: column;
-   row-gap: 10px;
-   column-gap: 20px;
-   padding: 5%;
+  grid-area: seccion-1;  
+  background-color: #18191a; /**color oficial de feisbu**/ 
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 10px;
+  column-gap: 20px;
+  padding: 5%;
  }
  
  .seccion-2
  {
-   grid-area: seccion-2;
-   display: flex;
-   background-color: red;
+  grid-area: seccion-2;
+  display: flex;
+  background-color: #18191a;
+  align-items: center;
+  justify-content: top ;
+  row-gap: 15px;
+   
+  flex-direction: column;
  
-   justify-content: center;
-   align-items: center;
-   padding-top: 3%;
+
+ 
+  padding-top: 3%;
  }
- .Publicaciones
- {
-   width: auto;
-   height: 100%;
-   /*background-color: blueviolet;*/
- }
+ 
  
  .seccion-3
  {
-   display: flex;
+  display: flex;
   flex-direction: column;
    justify-content: space-evenly;
    row-gap: 10px;
    column-gap: 20px;
    align-items: flex-end;
    
-   background-color: rgb(88, 85, 85);
+   background-color: #18191a;
    grid-area: seccion-3;
    padding: 5%;
-   border: 1px solid white;
+   
  }
- 
