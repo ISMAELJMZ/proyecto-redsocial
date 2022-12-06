@@ -7,6 +7,8 @@
     background-image: url(img/data1.jpg);
     color: white;
     box-sizing: border-box;
+    
+   
   }
 
 .matt{
@@ -20,7 +22,7 @@
   box-shadow: 23px 24px 19px -4px rgba(250,80,80,0.8);
   -webkit-box-shadow: 23px 24px 19px -4px rgba(250,80,80,0.8);
   -moz-box-shadow: 23px 24px 19px -4px rgba(250,80,80,0.8);
-}
+}*/
 
   .login__container {
     height: 390px;
@@ -29,7 +31,7 @@
     flex-direction: column;
     text-align: center;
     padding: 30px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.2);
     
   }
   .login__textBox {
