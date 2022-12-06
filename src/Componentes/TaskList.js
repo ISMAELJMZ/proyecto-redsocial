@@ -1,4 +1,5 @@
 import { useSelector , useDispatch} from 'react-redux'
+import { useEffect } from 'react'; 
 import { deleteTask } from '../features/tasks/taskSlice';
 import "./Tasklist.css";
 
@@ -12,6 +13,11 @@ function TaskList ( ) {
     }
 
 
+    useEffect( ()=> {
+
+    }, [])
+    
+
     return (
 
         <div>
@@ -21,8 +27,10 @@ function TaskList ( ) {
             <div key={task.id}>
              <div className='image-user'/>
              <p>Nombre usuario</p> 
-             <p className='Text-Area'>{task.title}</p>
+             <button className='Opc-edicion' onClick={() => handleDelete(task.id)}>Edit</button>
              <button className='Opc-edicion' onClick={() => handleDelete(task.id)}>Delete</button>
+             <div className='Text-Area'>{task.title}</div>
+             
             </div>
             <div className='seccion-like'></div>
 

@@ -1,15 +1,19 @@
 .Casilla-publicacion{
     width: 500px;
-    height: 150px;
+    height: auto;
     color:white;
     background-color: #242526;
     display: flex;
     gap: 1px ; /* row-gap column gap */
     padding: 10px;
     flex-wrap: wrap;
-    align-items: center;
+   flex-direction: row;
     justify-content: space-evenly;
     border-radius: 15px;
+    
+    margin-bottom: 15px;
+
+    
 }
 .seccion-like{
 
@@ -22,6 +26,10 @@
     
 }
 .Text-Area{
+    max-width: 500px;
+    min-height: 150px;
+    padding: 5%;
+    background-color: #00c64f;
 
 }
 .image-user{

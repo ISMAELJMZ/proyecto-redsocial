@@ -4,13 +4,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/2.jpg);
+    background-image: url(img/data1.jpg);
     color: white;
     box-sizing: border-box;
   }
 
 .matt{
-  background-image: url(img/5.jpg);
+  background-image: url(img/stadio1.jpg);
   opacity: 0.8;
   display: flex;  
   justify-content: center;

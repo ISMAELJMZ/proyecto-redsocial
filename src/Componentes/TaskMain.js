@@ -1,16 +1,15 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "./TaskMain.css";
 import {v4 as uuid} from 'uuid'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {addTask} from '../features/tasks/taskSlice'
-
+import { useParams } from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlusSquare, faImage,  faFaceLaughBeam} from '@fortawesome/free-solid-svg-icons';
 
 
-
+ 
 function Forms() {
 
 const [task, setTask]= useState({
@@ -18,7 +17,9 @@ const [task, setTask]= useState({
   description: 'Panel de publicaciones'
 })
  
+const params = useParams()
 const dispatch = useDispatch()
+const tasks = useSelector(state => state.tasks )
 
 const handleChange = e =>{ 
  setTask ({
@@ -36,12 +37,21 @@ const handleSubmit = (e) => {
  }))
 }
 
+useEffect( ()=> {
+  if (params.id){
+   setTask( tasks.find((task) => task.id === params.id));
+  }
+
+}, [])
+
+
 return(
   
     <div className='Box-item'>
     <div className='image-user'></div>
     
     <input className='input-form' 
+    type="text"
     name='title'
     placeholder='¿Cuentanos tu como te sientes? '
     onChange={handleChange}/> 

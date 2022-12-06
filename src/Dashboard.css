@@ -4,6 +4,7 @@
    margin: 0px;
    padding: 0px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
  }
 
  
@@ -18,6 +19,7 @@
    "seccion-1 seccion-2 seccion-3";
    width: 100vw;
    height: 100vh;
+   
  }
  
  /*Tabletas*/
@@ -88,7 +90,7 @@
   padding: 5%;
  }
  
- .seccion-2
+ .seccion-2 
  {
   grid-area: seccion-2;
   display: flex;
@@ -96,13 +98,12 @@
   align-items: center;
   justify-content: top ;
   row-gap: 15px;
-   
+  overflow: auto;
   flex-direction: column;
- 
-
- 
+  column-gap: 10px;
   padding-top: 3%;
  }
+ 
  
  
  .seccion-3

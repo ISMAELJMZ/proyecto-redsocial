@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 import TaskList from "../../Componentes/TaskList";
+
 const initialState = [
     {
         id: "1",
@@ -9,9 +9,6 @@ const initialState = [
         completed: false
     },
 ]
-
-
-
 export const taskSlice = createSlice({
     name: 'tasks', 
     initialState,
