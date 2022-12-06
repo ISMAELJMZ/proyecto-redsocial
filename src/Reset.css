@@ -4,12 +4,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(img/2.jpg);
+  background-image: url(img/5.png);
   color: white;
   box-sizing: border-box;
+  background-repeat: no-repeat;
   }
-  .matt{
-    background-image: url(img/5.jpg);
+
+    /*background-image: url(img/5.png);
+    background-repeat: no-repeat;
     opacity: 0.8;
     display: flex;  
     justify-content: center;
@@ -19,9 +21,8 @@
     box-shadow: 23px 24px 19px -4px rgba(250,80,80,0.8);
     -webkit-box-shadow: 23px 24px 19px -4px rgba(250,80,80,0.8);
     -moz-box-shadow: 23px 24px 19px -4px rgba(250,80,80,0.8);
-  }
-  .reset__container {
-    
+  }*/
+  .reset__container {  
 
     height: 200px;
     width: 300px;
@@ -29,7 +30,7 @@
     flex-direction: column;
     text-align: center;
     padding: 30px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.2);
   }
   .reset__textBox {
     color: white;
