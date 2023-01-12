@@ -14,7 +14,8 @@ function Forms() {
 
 const [task, setTask]= useState({
   title: '', 
-  description: 'Panel de publicaciones'
+  description: 'Panel de publicaciones',
+  img: ''
 })
  
 const params = useParams()
@@ -31,10 +32,15 @@ const handleChange = e =>{
 
 const handleSubmit = (e) => {
   e.preventDefault()
+ 
   dispatch(addTask({
     ...task, 
     id:uuid(),
+    
  }))
+
+
+ 
 }
 
 useEffect( ()=> {
@@ -55,14 +61,21 @@ return(
     name='title'
     placeholder='¿Cuentanos tu como te sientes? '
     onChange={handleChange}/> 
+    
+
     <hr className='hr'/>
-    <button  className='button' onClick={handleSubmit}> <FontAwesomeIcon className='icono1' icon={faPlusSquare}/>  Crear publicacion</button>
-    <button  className='button'><FontAwesomeIcon className='icono2' icon={faImage}/>  Foto / video</button>
+
+    <button  className='button' onClick={handleSubmit}> <FontAwesomeIcon className='icono1' icon={faPlusSquare}/>  Crear publicacion </button>
+    
+    <button  className='button' ><FontAwesomeIcon className='icono2' icon={faImage}/>  Foto / video</button>
+    {/*<input type='file' /> */}
+   
     <button  className='button'><FontAwesomeIcon className='icono3' icon={faFaceLaughBeam}/>  Feeling / activity </button>
 
       
     </div>
   )
 }
+
 
 export default Forms;

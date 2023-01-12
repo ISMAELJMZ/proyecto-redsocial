@@ -1,35 +1,111 @@
 .Casilla-publicacion{
-    width: 500px;
+    width: 480px;
     height: auto;
     color:white;
     background-color: #242526;
     display: flex;
-    gap: 1px ; /* row-gap column gap */
-    padding: 10px;
-    flex-wrap: wrap;
-   flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;; /* row-gap column gap */
+    padding: 20px;
     border-radius: 15px;
-    
     margin-bottom: 15px;
 
+}
+.Seccion-user{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 5px;
     
 }
+p{
+  
+    align-items: center;
+    width: 300px;
+}
+/*Botones de la sección donde aparece el icono de like, comentar y compartir*/
 .seccion-like{
-
-    width: 450px;
-    height: 20px;
-    background-color: #2e5984;
-
-}
-.Opc-edicion{
+    display: flex;
+    color: white;
+    background-color: #242526;
     
+    width: 478px;
+    height: 30px;
+    justify-content: space-around;
+   
+
 }
+.icono1{
+    color: #ffffff;
+  
+  
+    }
+    .icono1:hover{
+        color:rgb(12, 88, 181);
+    }
+    .icono1:focus{
+        color:rgb(12, 88, 181);
+    }
+.boton{
+    width: 100%;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #242526;
+    justify-content: space-between;
+}
+.boton:hover{
+    background-color:#404448;
+}
+
+
+.boton:focus {
+    background-color:#404448; 
+    color: rgb(12, 88, 181);
+    outline: none;
+  }
+
+  
+ 
+/*final de la seccion de los botones del apartado de likes*/
+
+/*  Botones donde puedes editar eh eliminar las casillas de publicación*/
+.btED{
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    border-style: none;
+    background-color: #242526;
+    justify-content: space-between;
+}
+.btED:hover{
+    
+    background-color:#404448
+
+}
+.BotonEdits{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+/*Final de casilla donde están los botones para editar y eliminar*/
 .Text-Area{
-    max-width: 500px;
-    min-height: 150px;
+    
+    border-color: rgb(255, 253, 253);
+    border-width: 1px;
+    border-style:inset;
+    border-radius: 5px;
+    padding:10% ;
+    width: 430px;
+    height: 250px;
+    overflow: auto;
+    
     padding: 5%;
-    background-color: #00c64f;
+   
 
 }
 .image-user{

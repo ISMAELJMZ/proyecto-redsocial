@@ -5,12 +5,17 @@ import Forms from "./Componentes/TaskMain";
 import "./Dashboard.css";
 import { auth, db, logout } from "./firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faUser, faFolderOpen, faUserGroup, faShop, faTv, 
+  faBookBookmark, faFlagCheckered, faCalendar, faEarthAmericas} from '@fortawesome/free-solid-svg-icons';
 
 
 import TaskList from "./Componentes/TaskList";
 
 function Dashboard() {
   
+  
+
  
 const [user, loading, /*error*/] = useAuthState(auth);
   const [name, setName] = useState("");
@@ -47,6 +52,18 @@ const [user, loading, /*error*/] = useAuthState(auth);
       </div>
 
         <div className="seccion-1">
+
+        <button className="botones-izq"> <FontAwesomeIcon className='icono1' icon={faUser}/>     Amigos</button>
+        <button className="botones-izq"><FontAwesomeIcon className='icono1' icon={faFolderOpen}/>     Más recientes</button>
+        <button className="botones-izq"><FontAwesomeIcon className='icono1' icon={faUserGroup}/>     Grupos</button>
+        <button className="botones-izq"><FontAwesomeIcon className='icono1' icon={faShop}/>     MarketPlace</button>
+        <button className="botones-izq"><FontAwesomeIcon className='icono1' icon={faTv}/>     Watch</button>
+        <button className="botones-izq"><FontAwesomeIcon className='icono1' icon={faBookBookmark}/>     Guardados</button>
+        <button className="botones-izq"><FontAwesomeIcon className='icono1' icon={faFlagCheckered}/>     Paginas</button>
+        <button className="botones-izq"><FontAwesomeIcon className='icono1' icon={faCalendar}/>     Eventos</button>  
+        <button className="botones-izq"><FontAwesomeIcon className='icono1' icon={faEarthAmericas}/>     Trabajo</button>
+      
+        
             
         </div>
 
@@ -57,11 +74,7 @@ const [user, loading, /*error*/] = useAuthState(auth);
         </div>
 
         <div className="seccion-3">
-            <button name="button">Click 1</button>
-            <button name="button">Click 2</button>
-            <button name="button">Click 3</button>
-            <button name="button">Click 5</button>
-            <button name="button">Click 6</button> 
+           
         </div>
         </div>
        </div>

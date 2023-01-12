@@ -6,10 +6,12 @@ const initialState = [
         id: "1",
         title: "Tarea de prueba",
         description: "Ejemplo de la tarea", 
+        img: "",
         completed: false
     },
 ]
 export const taskSlice = createSlice({
+
     name: 'tasks', 
     initialState,
     reducers: {
